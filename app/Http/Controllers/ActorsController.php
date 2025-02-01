@@ -58,7 +58,7 @@ class ActorsController extends Controller
             ->get('https://api.themoviedb.org/3/person/'.$id.'/combined_credits')
             ->json();
 
-        dump($credits);
+        // dump($credits);
 
         $viewModel = new ActorViewModel($actor, $social, $credits);
 
